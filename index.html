@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slft-alert.css">
 
     <title>seeleft.de - redirector</title>
 
@@ -21,14 +22,17 @@
     <div class="row">
         <div class="col-sm-12">
 
-            <div class="alert alert-danger" role="alert"><center>This website is in beta!</center></div>
+            <div class="slft-alert">
+                <span class="close-slft-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+                <center>this website is in beta // please report bugs</center>
+            </div>
 
         </div>
     </div>
 
     <div class="row">
         <div class="col-sm-12">
-            <ul class="nav nav-tabs bg-dark">
+            <ul class="nav nav-tabs bg-yellow">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">HOME</a>
                 </li>
@@ -50,7 +54,7 @@
                     <input type="text" class="form-control" id="link">
                 </div>
                 <center>
-                    <button type="submit" class="btn btn-primary btn-raised">Shorten</button>
+                    <button type="submit" class="btn btn-yellow btn-raised">Shorten</button>
 
                     <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#linkOptions" aria-expanded="false" aria-controls="linkOptions">Link Option</button>
                     <div class="collapse" id="linkOptions">
