@@ -1,20 +1,14 @@
-html, body {
-    font-family: 'Nanum Gothic', sans-serif;
-}
-
-.bg-yellow {
+body, html {
     background-color: #ffcc00;
-    color: #ffcc00;
-}
-
-.btn-yellow {
     color: black;
-    background-color: #ffcc00;
-    border-color: #ffcc00;
-    box-shadow: none;
 }
 
-.alert-yellow {
+.slft-btn-yellow {
     color: black;
-    background-color: #ffcc00;
+    background-color: white;
+}
+
+.slft-btn-yellow:hover {
+    color: white;
+    background-color: black;
 }

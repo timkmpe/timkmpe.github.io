@@ -1,0 +1,20 @@
+html, body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.bg-yellow {
+    background-color: #ffcc00;
+    color: #ffcc00;
+}
+
+.btn-yellow {
+    color: black;
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    box-shadow: none;
+}
+
+.alert-yellow {
+    color: black;
+    background-color: #ffcc00;
+}

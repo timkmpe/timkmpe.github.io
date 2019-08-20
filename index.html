@@ -1,78 +1,40 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slft-alert.css">
-
     <title>seeleft.de - redirector</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
 
 </head>
 <body>
 
-<div class="container">
+<div class="uk-container">
+    <center>
+        <h2>seeleft.de</h2>
 
-    <div class="row">
-        <div class="col-sm-12">
-
-            <div class="slft-alert">
-                <span class="close-slft-alert" onclick="this.parentElement.style.display='none';">&times;</span>
-                <center>this website is in beta // please report bugs</center>
+        <form>
+            <div class="uk-width-1-2@s">
+                <input class="uk-input" type="text" placeholder="https://" required>
             </div>
-
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-12">
-            <ul class="nav nav-tabs bg-yellow">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">STATS</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="row">
-
-        <div class="col-sm-12">
             <br>
-            <h2><center>seeleft.de</center></h2>
-            <form>
-                <div class="form-group">
-                    <label for="link" class="bmd-label-floating">Your Link: https://yourdomain.com/</label>
-                    <input type="text" class="form-control" id="link">
-                </div>
-                <center>
-                    <button type="submit" class="btn btn-yellow btn-raised">Shorten</button>
+            <div class="uk-width-1-2@s">
+                <input class="uk-input" type="text" placeholder="KEY">
+            </div>
+            <br>
+            <button type="submit" class="uk-button slft-btn-yellow">Shorten</button>
+        </form>
 
-                    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#linkOptions" aria-expanded="false" aria-controls="linkOptions">Link Option</button>
-                    <div class="collapse" id="linkOptions">
-                        <div class="form-group">
-                            slft.cf/<input type="text" class="form-control col-sm-2">
-                        </div>
-                    </div>
-                </center>
-            </form>
-        </div>
-
-    </div>
+    </center>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
-<script src="js/bootstrap-material-design.min.js"></script>
-<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
 
 </body>
 </html>
+
