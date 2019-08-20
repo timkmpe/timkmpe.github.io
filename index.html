@@ -12,6 +12,7 @@
 
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+    <script src="js/copypaste.js"></script>
 
 </head>
 <body>
@@ -23,6 +24,7 @@
         <form>
             <div class="uk-width-1-2@s">
                 <input class="uk-input" type="text" placeholder="https://" required>
+                <span class="uk-label uk-label-danger">is required</span>
             </div>
             <br>
             <div class="uk-width-1-2@s">
@@ -31,6 +33,10 @@
             <br>
             <button type="submit" class="uk-button slft-btn-yellow">Shorten</button>
         </form>
+
+        <h4>Your Link:</h4>
+        <input class="uk-input uk-width-1-4@s" id="text1" value="https://slft.cf/E5gZ" type="text" readonly> <span uk-icon="copy" uk-tooltip="Copy to Clipboard" onclick="copypaste()"></span>
+
 
     </center>
 </div>
