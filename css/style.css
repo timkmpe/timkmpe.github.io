@@ -3,6 +3,14 @@ body, html {
     color: black;
 }
 
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 1.5em;
+    text-align: center;
+}
+
 .slft-btn-yellow {
     color: black;
     background-color: white;
@@ -11,4 +19,9 @@ body, html {
 .slft-btn-yellow:hover {
     color: white;
     background-color: black;
+}
+
+.slft-center {
+    text-align: center;
+    margin-top: 10px;
 }
